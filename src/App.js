@@ -8,8 +8,8 @@ export const MyContext = createContext();
 
 
 function App() {
-  const [title, setTitle] = useState('');
-  const [body, setBody] = useState('');
+  const [title, setTitle] = useState([]);
+  const [body, setBody] = useState([]);
 
   return (
     <Router>
