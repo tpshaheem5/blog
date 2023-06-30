@@ -9,11 +9,11 @@ export const MyContext = createContext();
 
 function App() {
   const [title, setTitle] = useState([]);
-  const [body, setBody] = useState([]);
+  // const [body, setBody] = useState([]);
 
   return (
     <Router>
-      <MyContext.Provider value={{ title, setTitle, body, setBody }}>
+      <MyContext.Provider value={{ title, setTitle }}>
         <div>
           <Routes>
             <Route path="/createblog" element={<CreateBlog />} />
